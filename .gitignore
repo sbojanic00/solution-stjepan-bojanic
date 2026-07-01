@@ -1,0 +1,12 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+backend/**/*.user
+
+# Node/React
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# General
+.DS_Store
