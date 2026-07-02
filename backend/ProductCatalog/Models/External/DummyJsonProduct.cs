@@ -1,5 +1,6 @@
 ﻿namespace ProductCatalog.Models.External;
 
+// pasted special as json as classes
 public class DummyJsonProduct
 {
     public int Id { get; set; }
@@ -10,13 +11,18 @@ public class DummyJsonProduct
     public double DiscountPercentage { get; set; }
     public double Rating { get; set; }
     public int Stock { get; set; }
-    public string[] Tags { get; set; } = [];
+    public List<string> Tags { get; set; } = [];
     public string Brand { get; set; } = "";
+    public string Sku { get; set; } = "";
+    public int Weight { get; set; }
+    public Dimensions Dimensions { get; set; } = new Dimensions();
     public string WarrantyInformation { get; set; } = "";
     public string ShippingInformation { get; set; } = "";
     public string AvailabilityStatus { get; set; } = "";
+    public List<Review> Reviews { get; set; } = [];
     public string ReturnPolicy { get; set; } = "";
     public int MinimumOrderQuantity { get; set; }
-    public string[] Images { get; set; } = [];
+    public Meta Meta { get; set; } = new Meta();
+    public List<string> Images { get; set; } = [];
     public string Thumbnail { get; set; } = "";
 }
