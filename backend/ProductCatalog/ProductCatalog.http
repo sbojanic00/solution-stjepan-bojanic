@@ -1,0 +1,18 @@
+#@ProductCatalog_HostAddress = http://localhost:5161
+#
+#GET {{ProductCatalog_HostAddress}}/weatherforecast/
+#Accept: application/json
+
+### Get products list
+GET https://dummyjson.com/products
+Accept: application/json
+
+### Get product
+GET https://dummyjson.com/products/1
+Accept: application/json
+
+### Get categories
+GET https://dummyjson.com/products/categories
+Accept: application/json
+
+
