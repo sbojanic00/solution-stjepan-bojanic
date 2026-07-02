@@ -1,6 +1,6 @@
 ﻿namespace ProductCatalog.Models.External;
 
-public class Review
+public class DummyJsonReview
 {
     public int Rating { get; set; }
     public string Comment { get; set; } = "";

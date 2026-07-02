@@ -15,14 +15,14 @@ public class DummyJsonProduct
     public string Brand { get; set; } = "";
     public string Sku { get; set; } = "";
     public int Weight { get; set; }
-    public Dimensions Dimensions { get; set; } = new Dimensions();
+    public DummyJsonDimensions DummyJsonDimensions { get; set; } = new DummyJsonDimensions();
     public string WarrantyInformation { get; set; } = "";
     public string ShippingInformation { get; set; } = "";
     public string AvailabilityStatus { get; set; } = "";
-    public List<Review> Reviews { get; set; } = [];
+    public List<DummyJsonReview> Reviews { get; set; } = [];
     public string ReturnPolicy { get; set; } = "";
     public int MinimumOrderQuantity { get; set; }
-    public Meta Meta { get; set; } = new Meta();
+    public DummyJsonMeta DummyJsonMeta { get; set; } = new DummyJsonMeta();
     public List<string> Images { get; set; } = [];
     public string Thumbnail { get; set; } = "";
 }

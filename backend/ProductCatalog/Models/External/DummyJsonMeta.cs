@@ -1,6 +1,6 @@
 ﻿namespace ProductCatalog.Models.External;
 
-public class Meta
+public class DummyJsonMeta
 {
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }

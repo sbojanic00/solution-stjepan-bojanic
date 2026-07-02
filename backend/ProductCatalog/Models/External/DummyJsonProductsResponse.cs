@@ -1,6 +1,6 @@
 ﻿namespace ProductCatalog.Models.External;
 
-public class DummyJsonProductResponse
+public class DummyJsonProductsResponse
 {
     public List<DummyJsonProduct> Products { get; set; } = [];
     public int Total { get; set; }
