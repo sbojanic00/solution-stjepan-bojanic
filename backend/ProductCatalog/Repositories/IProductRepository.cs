@@ -1,15 +1,13 @@
-﻿using ProductCatalog.Models.Dtos;
+using ProductCatalog.Models.Dtos;
 
-namespace ProductCatalog.Services;
+namespace ProductCatalog.Repositories;
 
-public interface IProductSource
+public interface IProductRepository
 {
     Task<ProductListResultDto> GetProductsAsync(
         int skip,
         int limit,
         string? category,
-        decimal? minPrice,
-        decimal? maxPrice,
         CancellationToken ct);
 
     Task<ProductDetailDto?> GetProductByIdAsync(
@@ -20,8 +18,5 @@ public interface IProductSource
         string query,
         int skip,
         int limit,
-        CancellationToken ct);
-
-    Task<List<CategoryDto>> GetCategoriesAsync(
         CancellationToken ct);
 }
