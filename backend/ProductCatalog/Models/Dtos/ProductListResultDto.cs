@@ -3,5 +3,7 @@
 // wrapper for  list endpoint response
 public record ProductListResultDto(
     List<ProductListItemDto> Items,
-    int Total
+    int Total,
+    int Skip,
+    int Limit
     );
